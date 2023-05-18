@@ -8,6 +8,8 @@ services:
       MYSQL_USERNAME: root
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: rab3tech_db
+    ports:
+      - "33006:3306"
 
   book-app-rest-api:
     container_name: book-app-rest-api-container

@@ -17,7 +17,7 @@ CMD mvn clean package -DskipTests
 #copying the jar file from host machine to the docker container
 #COPY target/book-app-0.0.1-SNAPSHOT.jar /rab3tech/book-app-0.0.1-SNAPSHOT.jar
 
-RUN CP target/book-app-0.0.1-SNAPSHOT.jar book-app-0.0.1-SNAPSHOT.jar
+RUN cp target/book-app-0.0.1-SNAPSHOT.jar book-app-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8080
 
